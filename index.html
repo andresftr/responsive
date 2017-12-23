@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MiGuitar - tus mejores guitarras!!</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  </head>
+  <body>
+    <section> <!-- portada -->
+      <header > <!-- header -->
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">&#9776</label>
+
+        <nav class="menu"> <!-- menu -->
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="#guitarras">Guitarras</a>
+            </li>
+            <li>
+              <a href="precios.html">Precios</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="banner">
+        <h1 class="tit-principal">MiGuitar</h1>
+        <h1 class="titulo">Guitarras <span>incre</span>ibles</h1><!-- titulo -->
+        <h3 class="title-a">Sé la estrella de rock que siempre quisiste ser</h3><!-- resumen -->
+        <a class="conoce" href="#guitarras">Conoce mas</a><!-- boton -->
+      </div>
+    </section>
+    <section> <!-- guitarras -->
+      <h2>Nuestra guitarras</h2><!-- titulo -->
+      <div class="info">
+        <iframe id="video" src="https://www.youtube.com/embed/R1dW8M4EqYY" frameborder="0" allowfullscreen></iframe>  
+      </div>
+     
+      <article > <!-- guitarra 1 -->
+        <img  src="imagenes/acustica.png"  alt="Guitarra MiGuitar Acustica" />
+        <div >
+          <h3 >MiGuitar Acustica</h3>
+          <ol>
+            <li>Estilo vintage</li>
+            <li>Madera pura</li>
+            <li>Incluye estuche invisible de aluminio</li>
+          </ol>
+        </div>
+      </article>
+
+      <article > <!-- guitarra 2 -->
+        <img  src="imagenes/clasica.png" alt="Guitarra MiGuitar Classic"/>
+        <div >
+          <h3 >MiGuitar Classic</h3>
+          <ol>
+            <li>Estilo vintage</li>
+            <li>Liviana</li>
+            <li>Inicia tu camino como Rockstar</li>
+          </ol>
+        </div>
+      </article>
+    </section>
+    <footer >
+      <div>
+        <div>
+          <h1>MiGuitar</h1>
+          <a href="tel:+573024456678">
+            <div class="telefono">
+              <strong>Telefono</strong> <span>3024456678</span>
+            </div>
+          </a>
+          <a href="mailto:contacto@migitar.com">
+            <div class="correo">
+              <strong>E-mail</strong> <span>contacto@migitar.com</span>
+            </div>
+          </a>
+        </div>
+        <form >
+          <div >
+            <label for="nombre">Nombre</label>
+            <input type="text" required id="nombre" name="nombre"/>
+            <label for="email">E-mail</label>
+            <input type="email" required id="email" name="email"/>
+            <div class="genero">
+              <label for="mujer">
+                <input type="radio" id="mujer" checked name="sexo" value="mujer"> mujer
+              </label>
+              <label for="hombre">
+                <input type="radio" id="hombre" name="sexo" value="hombre"> hombre
+              </label>
+            </div>
+            <div class="checkbox">
+              <label for="cotizacion">
+                <input type="checkbox" checked id="cotizacion" name="intereses" value="cotizacion"> Cotización
+              </label>
+              <label for="reclamos">
+                <input type="checkbox" id="reclamos" name="intereses" value="reclamos"> Reclamos
+              </label>
+              <label for="comentarios">
+                <input type="checkbox" id="comentarios" name="intereses" value="comantarios"> Comentarios
+              </label>
+              <label for="otros">
+                <input type="checkbox" id="otros" name="intereses" value="otros"> Otros
+              </label>
+            </div>
+          </div>
+          <div >
+            <label for="comentarios">Comentarios</label>
+            <textarea name="comantarios" id="comentarios" cols="30" rows="7"></textarea>
+            <input class="enviar" type="submit" value="Enviar" />
+          </div>
+        </form>
+      </div>
+    </footer>   
+  </body>
+</html>
